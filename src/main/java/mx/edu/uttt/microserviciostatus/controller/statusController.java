@@ -14,7 +14,7 @@ public class statusController {
     @Autowired
     private statusService statusService;
 
-    @GetMapping("obtenerTodos")
+    @GetMapping("/obtenerTodos")
     public List<status> listarTodos() {
         return statusService.obtenerTodos();
     }
